@@ -1,0 +1,302 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #888;
+}
+
+hr {
+	border: none;
+	height: 6px;
+	background: white;
+	max-width: 500px;
+	margin: 48px 0;
+	margin-left: 96px;
+}
+
+hr.center {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+hr.right {
+	margin-right: 0;
+}
+
+hr.white {
+	background: white;
+}
+
+
+hr.gray {
+	background: gray;
+}
+
+h1 {
+	color: #666;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+h2 {
+	color: white;
+	font-family: sans-serif;
+	padding-bottom: 32px;
+	text-transform: uppercase;w
+}
+
+.wrap, section, main > header {
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 0 64px;
+	box-sizing: border-box;
+}
+
+section, main > header {
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+#navbar {
+	position: fixed;
+	width: 100%;
+	background: purple;
+	padding: 16px 0;
+	box-shadow: 0 0 5px #000;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+#navbar a {
+	color: inherit;
+	text-decoration: none;
+}
+
+#navbar .wrap {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+
+.logo {
+	float: left;
+	height: 64px;
+}
+
+.logo .brand {
+	font-size: 32px;
+	line-height: 64px;
+	color: white;
+	padding-left: 32px;
+	font-family: sans-serif;
+}
+
+.menu {
+	float: right;
+	text-transform: uppercase;
+	font-family: sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	color: white;
+	letter-spacing: 1px;
+}
+
+.menu ul {
+	list-style-type: none;
+	display: inline-block;
+}
+
+.menu ul li {
+	display: inline-block;
+	line-height: 32px;
+	padding: 0 16px;
+	margin: 16px 0;
+}
+
+.menu ul li:hover {
+	background: rgb(225, 255, 225);
+	color: purple;
+	cursor: pointer;
+}
+
+main > header {
+	padding-top: calc(96px + 96px);
+	padding-bottom: 64px;
+	background: #AAA;
+	font-size: 20px;
+	color: white;
+	font-family: sans-serif;
+	text-align: justify;
+}
+
+main > header img {
+	float: right;
+	border-radius: 50%;
+	width: 250px;
+	margin-left: 48px;
+}
+
+main > header:after {
+	content: ' ';
+	display: block;
+	height: 1px;
+	clear: both;
+}
+
+section.portfolio {
+	padding-top: 64px;
+	background: white;
+}
+
+section.portfolio img {
+	max-width: calc(50% - 16px);
+	margin-bottom: 32px;
+}
+
+section.portfolio img:nth-child(2n) {
+	margin-left: 32px;
+}
+
+section.contact {
+	padding-top: 64px;
+	background: white;
+}
+
+section .left, section .right {
+	//box-sizing: border-box;
+	width: 50%;
+	float: left;
+}
+
+section.contact input[type="text"], section.contact textarea {
+	color: gray;
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 32px;
+	padding: 24px 0;
+	font-size: 28px;
+	border: none;
+	border-bottom: 1px solid #BBB;
+	outline: none;
+}
+
+section.contact textarea {
+	height: 220px;
+}
+
+section.contact input[type="submit"] {
+	font-size: 20px;
+	background: #eee;
+	border: 1px solid gray;
+	color: gray;
+	padding: 5px;
+}
+
+section.contact form {
+	margin-bottom: 32px;
+}
+
+section.contact p {
+	width: 80%;
+	margin-left: 10%;
+	font-family: sans-serif;
+	font-size: 20px;
+	color: gray;
+	padding-bottom: 32px;
+	line-height: 1.5em;
+}
+
+section.about-page {
+	max-width: none;
+	box-shadow: none;
+	width: 100%;
+	background-color: #aaa;
+	padding: 64px 0;
+
+	text-align: center;
+}
+
+section.about-page p {
+	color: white;
+	font-family: sans-serif;
+	font-size: 20px;
+}
+
+section.about-page a {
+	color: purple;
+	text-decoration: none;
+}
+
+section.about-page a:hover {
+	text-decoration: underline;
+}
+
+section.about-page .link {
+	display: block;
+	font-family: sans-serif;
+	margin-bottom: 48px;
+}
+
+section.about-page .link a {
+	background: white;
+	padding: 16px;
+	border-radius: 5px;
+	transition: 0.1s background;
+}
+
+section.about-page .link a:hover {
+	text-decoration: none;
+}
+
+section.about-page .link.facebook a {
+	color: #3b5998;
+}
+
+section.about-page .link.facebook a:hover {
+	color: white;
+	background: #3b5998;
+}
+
+section.about-page .link.git a{
+	color: #333;
+}
+
+section.about-page .link.git a:hover {
+	color: white;
+	background: #333;
+}
+
+section.about-page .link.twitter a{
+	color: #55acee;
+}
+
+section.about-page .link.twitter a:hover {
+	color: white;
+	background: #55acee;
+}
+
+section.footer {
+	max-width: none;
+	width: 100%;
+	background: purple;
+	color: white;
+	text-align: center;
+
+	font-family: sans-serif;
+	font-size: 20px;
+	padding: 32px 0;
+
+}
+
+section.clear-after:after {
+	clear: both;
+	display: block;
+	content: ' ';
+}
+
+
+
+
+
